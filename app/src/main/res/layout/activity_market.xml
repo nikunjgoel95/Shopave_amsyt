@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MarketActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0582fd">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/drawer"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/shopave_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="24dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/basket"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/favourite"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_corners"
+            android:fontFamily="sans-serif-light"
+            android:hint="Search"
+            android:padding="16dp"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="center"
+            app:tabIndicatorColor="#fce102"
+            app:tabIndicatorHeight="4dp"
+            app:tabMaxWidth="0dp"
+            app:tabTextAppearance="@style/minecustomtab"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@android:color/darker_gray">
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/white">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="SHOP BY CATEGORIES"
+                android:textColor="@android:color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="SHOP BY BRANDS"
+                android:textColor="@android:color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewBrands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/advert_1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="FASHION TRENDS"
+                android:textColor="@android:color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewTrends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/advert_2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="WHATS NEW"
+                android:textColor="@android:color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/advert_3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="WHATS HOT"
+                android:textColor="@android:color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewHot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

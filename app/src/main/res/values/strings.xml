@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shopave</string>
+    <string name="disp_name">SHOPAVE</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="skip">Skip</string>
+    <string name="user_name">Welcome Jenny!</string>
+    <string name="next">NEXT</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.nikunj.shopave.sign_up">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/back_color"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    <TextView
+        android:text="@string/signup"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:src="@drawable/user_image"
+            android:layout_height="100dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/final_image"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/atlast"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="@string/user_name"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/email_add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ellipsize="start"
+            android:hint="EMAIL ADDRESS"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sign_up_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/username_sing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ellipsize="start"
+            android:hint="USER NAME"
+            />
+        </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+            android:id="@+id/phor_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/phone_nu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ellipsize="start"
+            android:hint="PHONE ADDRESS"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/date_birth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ellipsize="start"
+            android:drawableRight="@drawable/date"
+            android:hint="DATE OF BIRTH"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:id="@+id/fill_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:ellipsize="start"
+                android:hint="PASSWORD"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:background="@drawable/login_xml"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

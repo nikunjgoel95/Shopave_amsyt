@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/back_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlActivated">@color/star_color</item>
+    </style>
+
+    <style name="minecustomtab" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
