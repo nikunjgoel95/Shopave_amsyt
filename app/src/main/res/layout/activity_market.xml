@@ -184,6 +184,9 @@
                 android:text="WHATS HOT"
                 android:textColor="@android:color/black"/>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerViewHot"
                 android:layout_width="match_parent"
@@ -192,6 +195,14 @@
 
             </android.support.v7.widget.RecyclerView>
 
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@color/fab"
+                android:src="@drawable/layer_119"
+                />
+            </FrameLayout>
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

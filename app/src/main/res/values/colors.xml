@@ -8,4 +8,5 @@
     <color name="skip_color">#0683fd</color>
     <color name="back_color">#0582fd</color>
     <color name="star_color">#f9df05</color>
+    <color name="fab">#fd8505</color>
 </resources>
