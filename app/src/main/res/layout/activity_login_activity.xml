@@ -13,29 +13,30 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:background="@color/back_color"
+        android:layout_weight="1.5"
         android:orientation="vertical">
 
         <ImageView
             android:layout_marginTop="50dp"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
             android:src="@drawable/shopave_image"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
             android:textColor="@android:color/white"
             android:layout_gravity="center_horizontal"
             android:text="@string/disp_name"/>
 
-    </LinearLayout>
-
+        </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <Button
@@ -60,6 +61,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <android.support.design.widget.TextInputLayout
@@ -67,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp">
+            android:layout_marginRight="38dp">
 
             <EditText
                 android:id="@+id/username"
@@ -79,49 +81,48 @@
                 />
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="10dp">
-
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="wrap_content">
 
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="38dp"
+                    android:layout_marginTop="10dp">
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="start"
                     android:hint="PASSWORD"
+                    android:paddingTop="8dp"
                     android:inputType="textPassword"
                     />
-
+                </android.support.design.widget.TextInputLayout>
                 <TextView
                     android:id="@+id/text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/password"
-                    android:layout_alignBottom="@+id/password"
                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="35dp"
                     android:text="Forgot?"
                     android:textColor="@color/forgot_color"/>
 
             </RelativeLayout>
-        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
         android:layout_marginTop="20dp"
         android:text="@string/login"
+        android:layout_weight=".45"
         android:textColor="@android:color/white"
         android:textSize="15dp"
         android:background="@drawable/login_xml"/>
@@ -131,6 +132,7 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:text="@string/skip"
+        android:layout_weight="1"
         android:clickable="true"
         android:textColor="@color/skip_color"
         android:layout_width="wrap_content"
