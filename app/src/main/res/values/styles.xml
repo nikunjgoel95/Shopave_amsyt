@@ -15,4 +15,9 @@
     <style name="minecustomtab" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">20sp</item>
     </style>
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <item name="android:textColorHint">@color/required</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>

@@ -11,4 +11,5 @@
     <color name="fab">#fd8505</color>
     <color name="signincolor">#252d51</color>
     <color name="textcolorhigh">#0582fd</color>
+    <color name="required">#aaafc2</color>
 </resources>

@@ -6,13 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/white"
     tools:context="com.android.nikunj.shopave.sign_up">
 
     <LinearLayout
         android:orientation="vertical"
         android:background="@color/back_color"
         android:layout_width="match_parent"
-        android:padding="16dp"
+        android:layout_weight="0"
+        android:padding="8dp"
         android:layout_height="220dp">
     <TextView
         android:text="@string/signup"
@@ -23,6 +25,8 @@
         android:layout_height="wrap_content"/>
 
         <FrameLayout
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
@@ -54,14 +58,21 @@
             android:text="@string/user_name"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="18sp"
+            android:layout_marginTop="4dp"
+            android:textSize="22sp"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <LinearLayout
+        android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
         android:orientation="vertical">
 
         <android.support.design.widget.TextInputLayout
@@ -69,13 +80,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:paddingTop="8dp"
             android:layout_marginRight="20dp">
 
         <EditText
             android:id="@+id/email_add"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:ellipsize="start"
@@ -87,13 +98,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp"
             android:layout_marginRight="20dp">
 
         <EditText
             android:id="@+id/username_sing"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:ellipsize="start"
@@ -104,6 +116,8 @@
             android:id="@+id/phor_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
@@ -111,59 +125,78 @@
             android:id="@+id/phone_nu"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:inputType="phone"
             android:ellipsize="start"
             android:hint="PHONE ADDRESS"
             />
         </android.support.design.widget.TextInputLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
         <android.support.design.widget.TextInputLayout
             android:id="@+id/dob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp"
             android:layout_marginRight="20dp">
         <EditText
             android:id="@+id/date_birth"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:ellipsize="start"
-            android:drawableRight="@drawable/date"
             android:hint="DATE OF BIRTH"
             />
         </android.support.design.widget.TextInputLayout>
+            <ImageButton
+                android:id="@+id/calendar_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginRight="35dp"
+                android:padding="8dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_date_name"/>
+        </FrameLayout>
         <android.support.design.widget.TextInputLayout
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp"
             android:layout_marginRight="20dp">
 
             <EditText
                 android:id="@+id/fill_password"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:ellipsize="start"
                 android:hint="PASSWORD"
                 />
         </android.support.design.widget.TextInputLayout>
+
         <Button
             android:background="@drawable/login_xml"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="24dp"
             android:text="@string/next"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"/>
     </LinearLayout>
-
+</android.support.v4.widget.NestedScrollView>
 </LinearLayout>
