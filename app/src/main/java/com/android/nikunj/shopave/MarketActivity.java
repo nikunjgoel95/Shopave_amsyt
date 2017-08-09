@@ -104,5 +104,6 @@ public class MarketActivity extends AppCompatActivity {
         mTrendsRecyclerView.setAdapter(mRecyclerAdapter);
         mNewRecyclerView.setAdapter(mRecyclerAdapter);
         mHotRecyclerView.setAdapter(mRecyclerAdapter);
+        mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
     }
 }

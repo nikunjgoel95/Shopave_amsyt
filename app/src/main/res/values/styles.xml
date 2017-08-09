@@ -13,7 +13,7 @@
     </style>
 
     <style name="minecustomtab" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">

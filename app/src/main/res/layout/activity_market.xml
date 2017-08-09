@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
+                android:text="@string/disp_name"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:layout_marginLeft="24dp"/>
@@ -59,25 +59,26 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/background_corners"
             android:fontFamily="sans-serif-light"
+            android:drawableRight="@drawable/ic_search"
             android:hint="Search"
-            android:padding="16dp"/>
+            android:padding="6dp"/>
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabGravity="center"
+            app:tabGravity="fill"
             app:tabIndicatorColor="#fce102"
             app:tabIndicatorHeight="4dp"
             app:tabMaxWidth="0dp"
             app:tabTextAppearance="@style/minecustomtab"
-            app:tabMode="scrollable"
+            app:tabMode="fixed"
             app:tabSelectedTextColor="@android:color/white"
             app:tabTextColor="@android:color/darker_gray">
 
@@ -108,6 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="SHOP BY CATEGORIES"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"/>
 
             <android.support.v7.widget.RecyclerView
@@ -122,6 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="SHOP BY BRANDS"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"/>
 
             <android.support.v7.widget.RecyclerView
@@ -132,9 +135,10 @@
             </android.support.v7.widget.RecyclerView>
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="360dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="16dp"
+                android:layout_gravity="center"
                 android:background="@drawable/advert_1"/>
 
             <TextView
@@ -142,6 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="FASHION TRENDS"
+                android:textSize="16sp"
                 android:textColor="@android:color/black"/>
 
             <android.support.v7.widget.RecyclerView
@@ -161,6 +166,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:textSize="16sp"
                 android:text="WHATS NEW"
                 android:textColor="@android:color/black"/>
 
@@ -181,6 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:textSize="16sp"
                 android:text="WHATS HOT"
                 android:textColor="@android:color/black"/>
 
