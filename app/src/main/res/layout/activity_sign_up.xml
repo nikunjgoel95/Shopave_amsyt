@@ -12,7 +12,8 @@
         android:orientation="vertical"
         android:background="@color/back_color"
         android:layout_width="match_parent"
-        android:layout_height="180dp">
+        android:padding="16dp"
+        android:layout_height="220dp">
     <TextView
         android:text="@string/signup"
         android:textSize="18dp"
@@ -28,20 +29,20 @@
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_gravity="center"
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:src="@drawable/user_image"
-            android:layout_height="100dp"/>
+            android:layout_height="120dp"/>
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:src="@drawable/final_image"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:layout_gravity="center"
